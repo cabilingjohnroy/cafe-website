@@ -75,7 +75,7 @@ const lightboxImg = lightbox.querySelector("img");
 document.querySelectorAll(".g-item").forEach((btn) => {
   btn.addEventListener("click", () => {
     const img = btn.querySelector("img");
-    lightboxImg.src = img.src;
+    lightboxImg.src = img.dataset.full || img.src; // larger version if available
     lightboxImg.alt = img.alt;
     lightbox.showModal(); // <dialog> handles focus trapping and Escape for us
   });

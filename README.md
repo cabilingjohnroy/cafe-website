@@ -27,7 +27,7 @@ cafe-website/
 ├── js/script.js        # menu toggle, open-now status, lightbox
 ├── assets/
 │   ├── favicon.svg
-│   └── images/         # about.jpg, gallery-1..6.jpg, hero-share.jpg
+│   └── images/         # put client photos here
 ├── README.md
 └── .gitignore
 ```
@@ -43,13 +43,23 @@ cafe-website/
 | Colors and fonts | `css/style.css` → `:root` variables |
 | Text, menu, prices | `index.html` |
 | Opening hours (status badge) | `js/script.js` → `HOURS` |
-| Photos | replace files in `assets/images/` (keep names, or update `src` and `alt`) |
+| Photos | `index.html` → each `<img>` `src`, `data-full`, and `alt` |
 | Map link | `index.html` → search `google.com/maps` |
 | Search visibility | `index.html` → **delete** `<meta name="robots" content="noindex">` for real clients |
 
 ## Image credits
-Placeholder images are generated abstract art. Replace them with photos you have the rights to use
-(for example Unsplash or Pexels; check each site's license) or the client's own photos.
+Photos from [Unsplash](https://unsplash.com), used under the free [Unsplash License](https://unsplash.com/license),
+loaded directly from Unsplash's image CDN:
+- About: https://unsplash.com/photos/person-making-latte-art-nzyzAUsbV0M
+- Gallery 1: https://unsplash.com/photos/white-round-table-with-chairs-yjQDnOhGE34
+- Gallery 2: https://unsplash.com/photos/white-ceramic-mug-on-brown-wooden-table-gXtvTOs4tzg
+- Gallery 3: https://unsplash.com/photos/brown-bread-on-black-metal-rack-C6q6Yf-ECmE
+- Gallery 4: https://unsplash.com/photos/portafilters-with-coffee-beans-and-grounds-69ilqMz0p1s
+- Gallery 5: https://unsplash.com/photos/iced-coffee-in-plastic-cup-HRfnyL6AO-A
+- Gallery 6: https://unsplash.com/photos/people-work-on-laptops-in-a-cozy-coffee-shop-pqltPFdZaUw
+- Share preview: https://unsplash.com/photos/people-inside-cafe-qE1jxYXiwOA
+
+For real clients, use the client's own photos and store them in `assets/images/`.
 
 ## Deploy
 Hosted on Netlify (free plan), connected to this GitHub repository.
