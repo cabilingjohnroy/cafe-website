@@ -3,7 +3,7 @@
 A one-page, mobile-first website for a **fictional** café in Mandaluyong.
 Built as a portfolio sample for a ₱7,500 Starter Business Website package.
 
-**Live demo:** _add your Netlify URL here_
+**Live demo:** https://cafe-website-q2ij.netlify.app
 
 ## Features
 - Responsive layout (phone, tablet, desktop)
